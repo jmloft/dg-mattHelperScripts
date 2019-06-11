@@ -21,20 +21,17 @@ cd ..
 Write-Host('dgsn')
 
 cd dg-search-notify-service
+git stash
 git checkout dg-revert-jenkins
 git pull
 
-cd ..
-Write-Host('dgvn')
 
-cd dg-vin-notify-service
-git checkout dg-revert-jenkins
-git pull
 
 cd ..
 Write-Host('dge')
 
 cd efc-model-service
+git stash
 git checkout dg-revert-jenkins
 git pull
 
@@ -42,28 +39,12 @@ cd ..
 Write-Host('dgw')
 
 cd websocket-service
+git stash
 git checkout dg-revert-jenkins
 git pull
 
-cd ..
-Write-Host('dgcom')
 
-cd dg-components
-git checkout dg-revert-jenkins
-git pull
 
-cd ..
-Write-Host('dgspa')
 
-cd dg-spas
-git checkout dg-revert-jenkins
-git pull
-
-cd ..
-Write-Host('dgl')
-
-cd digital-garage-library
-git checkout dg-revert-jenkins
-git pull
 
 cd ..\dg-mattHelperScripts
