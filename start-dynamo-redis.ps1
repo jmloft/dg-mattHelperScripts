@@ -1,0 +1,3 @@
+$expression  = 'cmd /c start powershell -NoExit -Command {set-location "C:\Users\'+$env:USERNAME+'\source\repos\Toyota\Digital Garage\source\redis"; .\redis-server.exe; };'
+$expression += 'cmd /c start powershell -NoExit -Command {set-location "C:\Users\'+$env:USERNAME+'\source\repos\Toyota\Digital Garage\source\digital-garage-service\dynamodb_dg_local"; .\start-dynamo.bat;};'
+Invoke-Expression $expression
